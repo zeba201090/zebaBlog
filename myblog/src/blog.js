@@ -94,18 +94,103 @@ const Blog = () => {
         },
         {
           id: 2,
-          header: "Callbacks and their limitations",
-          body: "Callbacks are like promises made to do something once a task is done. However, when dealing with many tasks, callbacks can make your code messy. We'll look into the limitations of callbacks and the challenges they bring to keeping your code clean."
+          header: "Promises and Callbacks",
+          body: "Promises in JavaScript provide a structured approach to handle asynchronous tasks. They represent ongoing operations, have clear states (pending, fulfilled, rejected), support chaining for success and error handling, and enable non-blocking behavior, allowing the program to continue execution while waiting for tasks to complete. Callbacks are like promises made to do something once a task is done. However, when dealing with many tasks, callbacks can make your code messy. We'll look into the limitations of callbacks and the challenges they bring to keeping your code clean.",
         },
+        {id:8 ,
+        header: "Promises and Its States",
+        
+          subsections: [
+            
+              {id: 1,
+              header: "Pending",
+              body: "The initial state of a promise. It represents an ongoing operation that hasn't been fulfilled or rejected yet."
+              },
+              {id: 2,
+              header: "Fulfilled",
+              body: "The state of a promise when it's resolved. It represents a successful operation."
+              },
+              {id: 3,
+              header: "Rejected",
+              body: "The state of a promise when it's not resolved. It represents a failed operation."
+              },
+            ],},
+            
+        
+        { id: 3,
+          header: "When to Use Promises",
+          body: "Use Promises when dealing with asynchronous operations, such as fetching data from an API, reading files, or performing other non-blocking tasks.Promises are especially useful when you want to avoid callback hell (nested callbacks) and create a more structured and readable asynchronous code. Promises are suitable for scenarios where you need to perform tasks concurrently or sequentially while maintaining clear error-handling mechanisms."
+            },
         {
-          id: 3,
-          header: "Promises and handling asynchronous operations",
-          body: "Enter Promises – the superheroes of asynchronous JavaScript! A Promise is a way to handle tasks that take time. Learn how to create, use, and handle Promises to make your code more readable and easier to manage."
-        },
-        {
+
           id: 4,
-          header: "Async/Await syntax and benefits",
-          body: "Say hello to the modern and elegant syntax of Async/Await. This duo allows you to write asynchronous code in an easy-to-understand way. We'll dive into the syntax, understand how to use Async/Await, and explore the benefits it brings to your projects."
+          header : "Common Problems with Callbacks",
+          subsections: [ {
+            id:1,
+            header: "Callback Hell",
+            body: "Callback hell is a common problem with asynchronous code. It happens when you have many nested callbacks within callbacks, making your code messy and hard to read. Promises help you avoid callback hell by providing a more structured approach to asynchronous code."
+          },
+          {
+            id:2,
+            header: "Uncaught Errors",
+            body: "Errors in callbacks are hard to catch. They can lead to unexpected behavior and even crash your application. Promises provide a clear error-handling mechanism, allowing you to catch and handle errors effectively."
+          },
+          {
+            id:3,
+            header: "Limited Error Handling",
+            body: "Callbacks don't provide a clear way to handle errors. They can be difficult to debug and maintain. Promises, on the other hand, provide a structured approach to error handling, making your code more readable and maintainable."
+          },
+          {
+            id:4,
+            header: "Limited Control",
+            body: "Callbacks don't provide much control over asynchronous tasks. They can't be canceled or paused. Promises, on the other hand, provide more control over asynchronous tasks, allowing you to cancel or pause them."
+          },
+          {
+            id:5,
+            header: "Limited Support for Concurrency",
+            body: "Callbacks don't provide a clear way to handle concurrency. They can't be used to perform multiple tasks concurrently. Promises, on the other hand, provide a clear way to handle concurrency, allowing you to perform multiple tasks concurrently."
+          },
+          
+
+
+          ],
+        },
+        {
+          id: 5,
+          
+          header: "Async/Await ",
+          body: "`async` and `await` are features in JavaScript used for handling asynchronous code in a more readable and synchronous-like manner. They are often considered an improvement over working directly with Promises.",
+          subsections: [{
+            id: 1,
+            header: "The async Keyword",
+            body: "The `async` keyword is used to define an asynchronous function. It returns a Promise, allowing you to use `then()` and `catch()` for handling success and error cases. The `async` keyword can be used with both function declarations and arrow functions."
+          },
+          {
+            id: 2,
+            header: "The await Keyword",
+            body: "The `await` keyword is used to wait for a Promise to resolve or reject. It can only be used inside an `async` function. It makes asynchronous code look and behave more like synchronous code, which is easier to read and maintain."
+          },
+          {
+            id: 3,
+            header: "Error Handling",
+            body: "When using `async` and `await`, you can use `try/catch` to handle errors. This makes error handling easier and more readable than using `then()` and `catch()`."
+          },
+          {
+            id: 4,
+            header: "Chaining Promises",
+            body: "You can chain Promises with `async` and `await`. This allows you to perform multiple asynchronous tasks sequentially, making your code more readable and maintainable."
+          },
+          {
+            id: 5,
+            header: "Async/Await vs. Promises",
+            body: "Async/Await is an improvement over working directly with Promises. It makes asynchronous code look and behave more like synchronous code, which is easier to read and maintain."
+          },
+          {
+            id: 6,
+            header: "Async/Await vs. Callbacks",
+            body: "Async/Await is an improvement over working directly with callbacks. It makes asynchronous code look and behave more like synchronous code, which is easier to read and maintain."
+          }
+          ],
         },
         {
           id: 5,
@@ -197,7 +282,7 @@ const Blog = () => {
         <section key={index} className="mb-6 my-6">
 
 
-          <h2 className="text-3xl font-bold mb-4">{section.header}</h2>
+          <h2 className="text-3xl underline font-bold mb-4">{section.header}</h2>
 
           {section.subsections && section.subsections.length > 0 ? (
             <div className="ml-4 mx-20">
