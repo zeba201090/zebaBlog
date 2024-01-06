@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Link from 'anchor-link';
 
 const blogs = [
   {
@@ -44,12 +45,8 @@ const BlogList = () => {
             <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
             <p className="text-gray-600 text-sm mb-4">{blog.date}</p>
             <p className="text-gray-800 text-md">{blog.content}</p>
-            <a
-              href={`/zebaBlog/${blog.id}`} 
-              className="mt-4 block text-blue-500 hover:underline"
-            >
-              Read more
-            </a>
+            <Link to={`/zebaBlog/${blog.id}`} >Read More </Link>
+
           </div>
         ))}
       </div>
