@@ -25,8 +25,8 @@ function Section1() {
       <div className="relative z-10  px-8 p-5 mb-11 h-auto   ">
       <Router>
         <Routes>
-          <Route path="/" element={<BlogList/>} > </Route>
-          <Route path="/:id" element={<Blog/>}> </Route>
+          <Route path="/zebaBlog/" element={<BlogList/>} > </Route>
+          <Route path="/zebaBlog/:id" element={<Blog/>}> </Route>
 
         </Routes>
         </Router>
