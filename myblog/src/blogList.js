@@ -45,7 +45,7 @@ const BlogList = () => {
             <p className="text-gray-600 text-sm mb-4">{blog.date}</p>
             <p className="text-gray-800 text-md">{blog.content}</p>
             <a
-              href={`/${blog.id}`} 
+              href={`/zebaBlog/${blog.id}`} 
               className="mt-4 block text-blue-500 hover:underline"
             >
               Read more
