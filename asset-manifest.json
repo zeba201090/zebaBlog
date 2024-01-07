@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/zebaBlog/static/css/main.2cae99f2.css",
-    "main.js": "/zebaBlog/static/js/main.968f6360.js",
+    "main.css": "/zebaBlog/static/css/main.f91c4c56.css",
+    "main.js": "/zebaBlog/static/js/main.99be34c0.js",
     "index.html": "/zebaBlog/index.html",
-    "main.2cae99f2.css.map": "/zebaBlog/static/css/main.2cae99f2.css.map",
-    "main.968f6360.js.map": "/zebaBlog/static/js/main.968f6360.js.map"
+    "main.f91c4c56.css.map": "/zebaBlog/static/css/main.f91c4c56.css.map",
+    "main.99be34c0.js.map": "/zebaBlog/static/js/main.99be34c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cae99f2.css",
-    "static/js/main.968f6360.js"
+    "static/css/main.f91c4c56.css",
+    "static/js/main.99be34c0.js"
   ]
 }
